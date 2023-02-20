@@ -1,5 +1,9 @@
+import PropTypes from 'prop-types';
+
 import Profile from "./Profile/Profile";
 import user from '../user';
+import Statistics from "./Statistics/Statistics";
+import data from '../data';
 
 
 export const App = () => {
@@ -24,7 +28,14 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <Statistics
+        title
+        stats={data}
+      />
+    
       
     </div>
   );
 };
+
+// Profile.propTypes.shape(user)
