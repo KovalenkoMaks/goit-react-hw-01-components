@@ -38,5 +38,3 @@ export const App = () => {
     </div>
   );
 };
-
-// Profile.propTypes.shape(user)

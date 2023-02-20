@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import BookList from "./BookList/BookList"
+
 export default function Statistics({ title, stats }) {
     return <section className="statistics">
         {title && (
@@ -14,4 +16,10 @@ export default function Statistics({ title, stats }) {
             })}
   </ul>
 </section>
+}
+Statistics.propTypes = {
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+       
+    }))
 }
