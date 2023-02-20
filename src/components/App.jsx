@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import Profile from "./Profile/Profile";
 import user from '../user';
