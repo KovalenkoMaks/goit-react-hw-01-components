@@ -6,7 +6,7 @@ location,
 avatar,
 followers,
 views,
-likes}) {
+    likes}) {
     return <div className="profile">
   <div className="description">
     <img
