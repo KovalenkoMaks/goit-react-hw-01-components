@@ -1,15 +1,21 @@
+import PropTypes from 'prop-types';
 import FriendsCard from "./FriendsCard/FriendsCard"
+import {FriendListEl} from './FriendList.styled';
+
 export default function FriendList({data}) {
-    // const {avatar, name, isOnline, id} = props
-    // console.log(Array.isArray(friends));
-    console.log(data);
-    return <ul className="friend-list">
+
+    return <FriendListEl>
         {data.map(e => {
-            <FriendsCard
+           return <FriendsCard
                 key={e.id}
                 data={e } />
         })}
        
     
-     </ul>
+     </FriendListEl>
+}
+FriendList.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired
+    }))
 }

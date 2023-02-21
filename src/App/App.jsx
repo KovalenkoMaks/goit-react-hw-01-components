@@ -1,24 +1,16 @@
 // import PropTypes from 'prop-types';
 
-import Profile from "./Profile/Profile";
+import Profile from "../components/Profile/Profile";
 import user from '../user';
-import Statistics from "./Statistics/Statistics";
+import Statistics from "../components/Statistics/Statistics";
 import data from '../data';
-import FriendList from './FriendList/FriendList'
+import FriendList from '../components/FriendList/FriendList'
 import friends from '../friends';
+import { Container } from './App.styled';
 // console.log(friends);
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <Container>
       {/* React homework template */}
       <Profile
         username={user.username}
@@ -40,6 +32,6 @@ export const App = () => {
       />
     
       
-    </div>
+    </Container>
   );
 };

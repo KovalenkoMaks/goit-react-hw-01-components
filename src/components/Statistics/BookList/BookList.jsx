@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
-
+import { ListItem } from './Booklist.styled';
+import {randomColor} from '../../../Utils/index';
 export default function BookList({data}) {
   const {
     label,
     percentage } = data
-    return <li className="item" >
+    return <ListItem style={{backgroundColor: `${randomColor()}`}}>
       <span className="label">{label}</span>
       <span className="percentage">{percentage}%</span>
-    </li>
+    </ListItem>
 
 } 
 BookList.propTypes = { 

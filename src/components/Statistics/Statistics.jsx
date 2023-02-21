@@ -1,21 +1,22 @@
 import PropTypes from 'prop-types';
 import BookList from "./BookList/BookList"
+import {StatisticsSection, Title, StatList} from './Statistics.styled'
 
 export default function Statistics({ title, stats }) {
-    return <section className="statistics">
+    return <StatisticsSection className="statistics">
         {title && (
-             <h2 className="title">Upload stats</h2>
+             <Title>Upload stats</Title>
         )}
 
-  <ul className="stat-list">
+  <StatList>
             {stats.map(e => {
                 return <BookList
                     key={e.id}
                     data = {e}
                 />
             })}
-  </ul>
-</section>
+  </StatList>
+</StatisticsSection>
 }
 Statistics.propTypes = {
     stats: PropTypes.arrayOf(PropTypes.shape({
