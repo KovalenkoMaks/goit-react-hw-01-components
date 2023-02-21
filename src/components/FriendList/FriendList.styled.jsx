@@ -1,11 +1,11 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 const FriendListEl = styled.ul`
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    width: 400px;
-`
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 400px;
+`;
 
-export {FriendListEl}
+export { FriendListEl };

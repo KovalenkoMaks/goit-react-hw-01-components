@@ -1,21 +1,17 @@
-import styled from '@emotion/styled'
-// import props from "../../transactions";
-// console.log(props);
+import styled from '@emotion/styled';
+
 const Table = styled.table`
- background-color: #ECF1F4;
-`
+  background-color: #ecf1f4;
+`;
 const Head = styled.thead`
-tr{
-    background-color: #00BED5;
-}
-
-`
+  tr {
+    background-color: #00bed5;
+  }
+`;
 const Body = styled.tbody`
-text-align: center;
-`
+  text-align: center;
+`;
 const Element = styled.tr`
-    background-color: ${props => props.index % 2 ? '#EBF2F4' : 'white'}
-`
-export { Table, Head, Body,Element}
-
-//background-color: #00BED5; #EBF2F4
+  background-color: ${props => (props.index % 2 ? '#EBF2F4' : 'white')};
+`;
+export { Table, Head, Body, Element };

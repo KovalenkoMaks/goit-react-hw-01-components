@@ -1,14 +1,14 @@
 // import PropTypes from 'prop-types';
 
-import Profile from "../components/Profile/Profile";
+import Profile from '../components/Profile/Profile';
 import user from '../user';
-import Statistics from "../components/Statistics/Statistics";
+import Statistics from '../components/Statistics/Statistics';
 import data from '../data';
-import FriendList from '../components/FriendList/FriendList'
+import FriendList from '../components/FriendList/FriendList';
 import friends from '../friends';
 import { Container } from './App.styled';
 import TransactionHistory from '../components/TransactionHistory/TransactionHistory';
-import transaction from "../transactions";
+import transaction from '../transactions';
 
 export const App = () => {
   return (
@@ -24,19 +24,11 @@ export const App = () => {
         likes={user.stats.likes}
         stats={user.stats}
       />
-      <Statistics
-        title
-        stats={data}
-      />
-      
-      <FriendList
-        data = {friends}
-      />
+      <Statistics title stats={data} />
 
-      <TransactionHistory
-      data = {transaction}
-      />    
-      
+      <FriendList data={friends} />
+
+      <TransactionHistory data={transaction} />
     </Container>
   );
 };

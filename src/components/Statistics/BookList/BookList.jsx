@@ -3,19 +3,18 @@ import { ListItem } from './Booklist.styled';
 
 export default function BookList({ data, index }) {
   // console.log(data);
-  const {
-    label,
-    percentage } = data
-  return <ListItem index = {index} >
+  const { label, percentage } = data;
+  return (
+    <ListItem index={index}>
       <span className="label">{label}</span>
       <span className="percentage">{percentage}%</span>
     </ListItem>
+  );
+}
 
-} 
-
-BookList.propTypes = { 
+BookList.propTypes = {
   data: PropTypes.shape({
     label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired
-  })
-} 
+    percentage: PropTypes.number.isRequired,
+  }),
+};
