@@ -4,8 +4,9 @@ import Profile from "./Profile/Profile";
 import user from '../user';
 import Statistics from "./Statistics/Statistics";
 import data from '../data';
-
-
+import FriendList from './FriendList/FriendList'
+import friends from '../friends';
+// console.log(friends);
 export const App = () => {
   return (
     <div
@@ -32,6 +33,10 @@ export const App = () => {
       <Statistics
         title
         stats={data}
+      />
+      
+      <FriendList
+        data = {friends}
       />
     
       
