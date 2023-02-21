@@ -7,7 +7,9 @@ import data from '../data';
 import FriendList from '../components/FriendList/FriendList'
 import friends from '../friends';
 import { Container } from './App.styled';
-// console.log(friends);
+import TransactionHistory from '../components/TransactionHistory/TransactionHistory';
+import transaction from "../transactions";
+
 export const App = () => {
   return (
     <Container>
@@ -30,7 +32,10 @@ export const App = () => {
       <FriendList
         data = {friends}
       />
-    
+
+      <TransactionHistory
+      data = {transaction}
+      />    
       
     </Container>
   );

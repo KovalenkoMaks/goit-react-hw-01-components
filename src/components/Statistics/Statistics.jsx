@@ -9,10 +9,11 @@ export default function Statistics({ title, stats }) {
         )}
 
   <StatList>
-            {stats.map(e => {
+            {stats.map((e, i) => {
                 return <BookList
                     key={e.id}
-                    data = {e}
+                    data={e}
+                    index = {i}
                 />
             })}
   </StatList>

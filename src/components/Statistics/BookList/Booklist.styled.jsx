@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-
+import {randomColor} from '../../../Utils/index';
 
 const ListItem = styled.li`
    opacity: 0.8;
@@ -7,6 +7,7 @@ const ListItem = styled.li`
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: ${props => randomColor()}
 `
 
 export {ListItem}
