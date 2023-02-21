@@ -11,6 +11,7 @@ tr{
 
 `
 const Body = styled.tbody`
+text-align: center;
 `
 const Element = styled.tr`
     background-color: ${props => props.index % 2 ? '#EBF2F4' : 'white'}
